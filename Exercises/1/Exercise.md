@@ -92,15 +92,19 @@ console.log("Weekend");
 
 switch (day) {
     case "Friday": 
+    console.log("Weekday");
     console.log("its the end of the Weekday");
     break;  
     case "Monday": 
+    console.log("Weekday");
     console.log("its the start for the week");
     break; 
     case "Tuesday": 
+    console.log("Weekday");
     console.log("its the day for shopping"); 
     break; 
     case "Sunday":
+        console.log("Weekdend");
     console.log("Time to rest!");
     break;
     default: 
