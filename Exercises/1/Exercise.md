@@ -7,6 +7,10 @@
 Try and understand the output before running it.
 Explain why it runs in this order.
 
+```A, E, G, D, F, B, C
+// I have remark here the console.log inside the function run before the promise 
+```
+
 ```javascript
 console.log('A');
 
