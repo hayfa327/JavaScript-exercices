@@ -36,10 +36,19 @@ console.log('G');
 ### Exercise: For Loop
 
 Write a for loop that:
-
 1. Creates an array of the first 10 even numbers (2, 4, 6, 8, ...)
 2. The calculates the sum of those numbers in a second loop
 3. Finally, prints the array and the sum
+
+ ```js
+ const arrayEvenNumbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+ let sum = 0;
+for (let i= 0; i< arrayEvenNumbers.length; i++) {
+   sum += arrayEvenNumbers[i];
+ }; 
+ console.log(arrayEvenNumbers);
+ console.log(sum); 
+ ```
 
 ### Exercise: While Loop
 
