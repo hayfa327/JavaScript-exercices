@@ -63,6 +63,18 @@ Write a while loop that:
 3. Counts how many iterations it took
 4. Finally, prints the final number and the iteration count
 
+```js
+ let n = 1; 
+let count = 0; 
+while (n < 1000) {
+  n = n * 2; 
+  count++
+}
+console.log(n);
+console.log(count);
+
+ ```
+
 ## Control Flow
 
 ### Exercise: Switch Statement
