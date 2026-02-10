@@ -27,7 +27,7 @@ Promise.resolve().then(() => {
     console.log('F');
 })();
 
-console.log('G');*/
+console.log('G'); 
 
 let n = 1; 
 let count = 0; 
@@ -36,4 +36,25 @@ while (n < 1000) {
   count++
 }
 console.log(n);
-console.log(count);
+console.log(count);*/
+
+const day = "Sunday"; 
+console.log("Weekend"); 
+
+switch (day) {
+    case "Friday": 
+        console.log("its the end of the Weekday");
+        break;  
+    case "Monday": 
+        console.log("its the start for the week");
+        break; 
+    case "Tuesday": 
+        console.log("its the day for shopping"); 
+        break; 
+     case "Sunday":
+     console.log("Time to rest!");
+    break;
+    default: 
+    console.log("Invalid day")
+
+}

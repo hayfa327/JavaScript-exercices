@@ -85,3 +85,27 @@ Write a switch statement that:
 2. Prints whether the day is a "Weekday", "Weekend", or "Invalid day"
 3. Also prints a custom message for each day (e.g., "Monday - Start of the work week!")
 4. Test it with at least 3 different day values
+
+```js
+ const day = "Sunday"; 
+console.log("Weekend"); 
+
+switch (day) {
+    case "Friday": 
+    console.log("its the end of the Weekday");
+    break;  
+    case "Monday": 
+    console.log("its the start for the week");
+    break; 
+    case "Tuesday": 
+    console.log("its the day for shopping"); 
+    break; 
+    case "Sunday":
+    console.log("Time to rest!");
+    break;
+    default: 
+    console.log("Invalid day")
+
+}
+
+ ```
