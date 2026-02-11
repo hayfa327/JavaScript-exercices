@@ -28,22 +28,27 @@ The function must:
 Example usage:
 
 ```javascript
+ function calculate(operation, number1, number2) {
+    if(operation === "add") {
+        console.log(number1 + number2); 
+    }else if (operation === "subtract") {
+      console.log(number1 - number2)
+    }else if (operation === "multiply"){
+      console.log(number1 * number2)
+    } else if (operation === "divide") {
+      console.log(number1 / number2)
+    }else {
+      console.log("Invalid operation")
+    }
+
+}
+
 calculate(10, 5, 'add'); // Outputs: 15
 calculate(10, 5, 'subtract'); // Outputs: 5
 calculate(10, 5, 'multiply'); // Outputs: 50
 calculate(10, 5, 'divide'); // Outputs: 2
 calculate(10, 5, 'power'); // Outputs: "Invalid operation"
 ```
-
-let number1 = 5; 
-let number2 = 10; 
-
- function (calculate) {
-    if number1 + number2 
-
-}
-
-
 
 ## Hoisting
 
