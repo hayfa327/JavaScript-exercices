@@ -104,7 +104,7 @@ switch (day) {
     console.log("its the day for shopping"); 
     break; 
     case "Sunday":
-        console.log("Weekdend");
+    console.log("Weekdend");
     console.log("Time to rest!");
     break;
     default: 
