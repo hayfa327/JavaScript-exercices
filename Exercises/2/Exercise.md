@@ -35,6 +35,16 @@ calculate(10, 5, 'divide'); // Outputs: 2
 calculate(10, 5, 'power'); // Outputs: "Invalid operation"
 ```
 
+let number1 = 5; 
+let number2 = 10; 
+
+ function (calculate) {
+    if number1 + number2 
+
+}
+
+
+
 ## Hoisting
 
 ### Exercise: Predict the Output
@@ -44,8 +54,9 @@ Try to predict the output of each code snippet **before** running it. Then expla
 **Snippet A:**
 
 ```javascript
-console.log(a);
-console.log(b);
+// undefined because console.log came before declare the varibale 
+console.log(a);  
+console.log(b);                  
 var a = 1;
 let b = 2;
 ```
@@ -53,8 +64,9 @@ let b = 2;
 **Snippet B:**
 
 ```javascript
-sayHello();
-sayGoodbye();
+// the the first function its works (- Hello!- in the terminal)
+sayHello();//undefiend 
+sayGoodbye();// undefiend
 
 function sayHello() {
     console.log('Hello!');
@@ -63,11 +75,13 @@ function sayHello() {
 var sayGoodbye = function() {
     console.log('Goodbye!');
 };
+// will print sayGoodBye its not function because use (var - typeError)
 ```
 
 **Snippet C:**
 
 ```javascript
+// undefiend / 20 (because we declare x two times and in this case first x is undefiend )
 var x = 10;
 
 function foo() {
