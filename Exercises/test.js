@@ -1,5 +1,5 @@
-for (var i = 1; i <= 3; i++) {
+for (let i = 1; i <= 3; i++) {
+    setTimeout(() => {
         console.log(i);
-    setTimeout (() => {( i * 1000);
-      
-} 
+    }, i * 1000);
+}

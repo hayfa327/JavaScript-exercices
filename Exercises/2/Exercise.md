@@ -149,7 +149,7 @@ function createCounter (startValue = 0 )  {
 **Part A:** Explain why this code doesn't work as expected:
 if I console.log after (i * 1000), will be the answer 1, 2, 3, 4, 4 ,4
 
-but if I change the function like this will be the write anwer , because the settimeout we will make the javeScripte run noe the loop first and after the waiting answer
+but if I change the function like this will be the write anwer , because the settimeout we will make the javeScripte run noe the loop first and after the waiting answer, 
 
 ```javascript
 for (var i = 1; i <= 3; i++) {
@@ -182,3 +182,11 @@ for (var i = 1; i <= 3; i++) {
 ```
 
 **Part C:** Fix the code by using `let` instead.
+```javascript
+ for (let i = 1; i <= 3; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, i * 1000);
+}
+// let make the loop block-scoped
+```
