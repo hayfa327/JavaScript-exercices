@@ -123,6 +123,25 @@ console.log(counter.getCount()); // 6
 
 const counter2 = createCounter(); // starts at 0
 console.log(counter2.getCount()); // 0
+
+function createCounter (startValue = 0 )  {
+    let count = startValue; 
+    return {
+      increment() {
+      count++; 
+      return count; 
+    }, 
+   
+    decrement() {
+      count--;
+      return count;
+    },
+
+    getCount() {
+      return count;
+    }
+  }; 
+} 
 ```
 
 ### Exercise: The Classic Loop Problem

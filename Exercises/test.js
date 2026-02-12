@@ -1,17 +1,27 @@
- 
- 
- function calculate(operation, number1, number2) {
-    if(operation === "add") {
-        console.log(number1 + number2); 
-    }else if (operation === "subtract") {
-      console.log(number1 - number2)
-    }else if (operation === "multiply"){
-      console.log(number1 * number2)
-    } else if (operation === "divide") {
-      console.log(number1 / number2)
-    }else {
-      console.log("Invalid operation")
-    }
+function createCounter (startValue = 0 )  {
+    let count = startValue; 
+    return {
+      increment() {
+      count++; 
+      return count; 
+    }, 
+   
+    decrement() {
+      count--;
+      return count;
+    },
 
-}
-calculate("add", 5, 3); // Output: 8
+    getCount() {
+      return count;
+    }
+  }; 
+} 
+
+
+const counter = createCounter(5);
+createCounter(); 
+console.log(counter.getCount());  // 5
+console.log(counter.increment()); // 6
+console.log(counter.increment()); // 7
+console.log(counter.decrement()); // 6
+console.log(counter.getCount());
