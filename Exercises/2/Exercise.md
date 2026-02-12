@@ -147,7 +147,19 @@ function createCounter (startValue = 0 )  {
 ### Exercise: The Classic Loop Problem
 
 **Part A:** Explain why this code doesn't work as expected:
+if I console.log after (i * 1000), will be the answer 1, 2, 3, 4, 4 ,4
 
+but if I change the function like this will be the write anwer , because the settimeout we will make the javeScripte run noe the loop first and after the waiting answer
+
+```javascript
+for (var i = 1; i <= 3; i++) {
+        console.log(i);
+    setTimeout (() => {( i * 1000);
+    console.log(i);
+      
+})
+}
+```
 ```javascript
 for (var i = 1; i <= 3; i++) {
     setTimeout(() => {
@@ -159,5 +171,14 @@ for (var i = 1; i <= 3; i++) {
 ```
 
 **Part B:** Fix the code using a closure (without changing `var` to `let`).
+```javascript
+for (var i = 1; i <= 3; i++) {
+        console.log(i);
+    setTimeout (() => {( i * 1000);
+    console.log(i);
+      
+})
+}
+```
 
 **Part C:** Fix the code by using `let` instead.
