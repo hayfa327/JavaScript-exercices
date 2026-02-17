@@ -40,4 +40,10 @@ Expected output:
 
 ```javascript
 calculateTotal(carts); // Outputs: 1460
+
+let carts = []; 
+function calculateTotal (carts) => {
+  let carts = price 
+
+}
 ```

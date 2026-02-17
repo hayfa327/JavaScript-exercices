@@ -12,6 +12,11 @@ Given an array of numbers, use `map()` to create a new array where each number i
 const numbers = [1, 2, 3, 4, 5];
 // Your code here
 // Expected output: [2, 4, 6, 8, 10]
+ const doubled = numbers.map((number) => {
+  return  number * 2; 
+ 
+ }); 
+   console.log(doubled)
 ```
 
 ### Exercise: Extract Property Values
