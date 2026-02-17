@@ -29,6 +29,10 @@ const users = [
     { id: 2, name: 'Bob', age: 30 },
     { id: 3, name: 'Charlie', age: 35 },
 ];
+function usersName () {
+  return users.map(user => user.name)
+}
+console.log(usersName())
 // Your code here
 // Expected output: ['Alice', 'Bob', 'Charlie']
 ```
