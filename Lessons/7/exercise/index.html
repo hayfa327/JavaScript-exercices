@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Challenge - Find All the Bugs!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .error-box {
+            background-color: #ffebee;
+            border: 1px solid #f44336;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #output {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 4px;
+            min-height: 100px;
+            margin-top: 20px;
+        }
+        .user-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"
+        <h1>Welcome to the Bug Hunt!</h1>
+        <p>This page is full of errors. Your mission: find and fix them all!</p>
+    </div>
+
+    <diiv class="container">
+        <h2>User Registration</h2>
+        
+        <form id="registrationForm>
+            <input type="text" id="username" placeholder="Enter username"></input>
+            <br><br>
+            
+            <input typ="email" id="email" placeholder="Enter email">
+            <br><br>
+            
+            <label for="age">Your Age:
+            <input type="number" id="age" placeholder="Enter age">
+            <br><br>
+            
+            <button type="button" onclick="RegisterUser()">Register</button>
+        </form>
+    </diiv>
+
+    <div  class ="container">
+        <h2>Calculator</h2>
+        <input type="number" id="num1" placeholder="First number">
+        <input type="number" id="num2" placeholder="Second number">
+        <br><br>
+        
+        <button onclick="addNumbers()>Add Numbers</button>
+        <button onclick="multiplyNumbers()">Multiply</button>
+        <button onclick="divideNumbers()">Divide</button>
+        
+        <span>Result: <p id="calcResult">-</p></span>
+    </div>
+
+    <div class="container">
+        <h2>User List</h2>
+        <button onclik="loadUsers()">Load Users</button>
+        <button onclick="clearUsers()">Clear</button>
+        
+        <ul id="userList">
+            <li>Click 'Load Users' to see the list
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Counter</h2>
+        <p>Count: <span id="counter-display">0</span></p>
+        <button onclick="incrementCounter()">+</button>
+        <button onclick="decrementCounter()">-</button>
+        <button onclick="resetCounter()">Reset</button>
+    </div>
+
+    <div class="container">
+        <h2>Message Board</h2>
+        <textarea rows="4" cols="50" placeholder="Enter your message"></textarea>
+        <br>
+        <button onclick="postMessage()">Post Message</button>
+        <button onclick="clearMessages()">Clear All</button>
+        
+        <div id="messageBoard"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Image Gallery</h2>
+        <img src="nonexistent-image.jpg" width="200">
+        <img scr="another-image.png" alt="Another image">
+    </div>
+
+    <div class="container">
+        <h2>Useful Links</h2>
+        <a hrf="https://developer.mozilla.org">MDN Web Docs</a>
+        <a href="https://javascript.info" target="_blank">JavaScript.info</a>
+    </div>
+
+    <div class="container">
+        <h2>Output Console</h2>
+        <div id="output">
+            <p>Results will appear here...</p>
+        </div>
+    </div>
+
+    <script src="script"></script>
+
+    <div class="container">
+        <h2>Score Table</h2>
+        <table border="1" style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>Charlie<td>78</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
