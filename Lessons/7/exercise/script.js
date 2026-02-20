@@ -3,28 +3,28 @@
 // ============================================================
 
 // ERROR 1
-lte counter = 0;
+let counter = 0;
 
 // ERROR 2
-const welcomeMessage = "Welcome to the Debug Challenge!;
+const welcomeMessage = "Welcome to the Debug Challenge!";
 
 // ERROR 3
-const class = "container";
+const classCounter = "container";
 
 // ERROR 4
-let userName = "Guest"
-let userEmail = "guest@example.com"
+let userName = "Guest";
+let userEmail = "guest@example.com";
 
 // ERROR 5
-const MAX_USERS = 100;
-MAX_USERS = 200;
+let maxUser = 100;
+maxUser = 200;
 
 // ERROR 6
-const colors = ["red", "green" "blue", "yellow"];
+const colors = ["red", "green", "blue",  "yellow"];
 
 // ERROR 7
 const user = {
-    name "John",
+    name: "John",
     age: 25,
     email: "john@example.com"
 };
@@ -34,10 +34,12 @@ function greetUser(name) {
     console.log("Hello, " + name);
     if (name === "Admin") {
         console.log("Welcome, Admin!");
+    }
+}
     
 
 // ERROR 9
-const multiply = (a, b) > {
+function multiply (a, b)  {
     return a * b;
 };
 
@@ -46,15 +48,16 @@ function addNumbers() {
     const num1 = document.getElementById("num1").value;
     const num2 = document.getElementById("num2").value;
     const result = parseInt(num1) + parseInt(num2);
-    document.getElementById("calcResult".textContent = result;
+    document.getElementById("calcResult").textContent = result;
 }
+console.log("clicked");
 
 // ERROR 11
 function multiplyNumbers() {
     const num1 = document.getElementById("num1").value;
     const num2 = document.getElementById("num2").value;
-    const result = num1 * num2;
-    document.getElementById("calcresult").textContent = result;
+    const result =  Number(num1) + Number(num2);
+    document.getElementById("calcResult").textContent = result;
 }
 
 // ERROR 12
@@ -80,7 +83,7 @@ function registeruser() {
 }
 
 // ERROR 16
-incrementCounter() {
+function incrementCounter() {
     counter++;
     document.getElementById("counter-display").textContent = counter;
 }
@@ -170,7 +173,7 @@ function delayedGreeting() {
 
 // ERROR 28
 const numbers = [1, 2, 3, 4, 5];
-const [first, second, ...rest...] = numbers;
+const [first, second, ...rest] = numbers;
 
 // ERROR 29
 const calculator = {
@@ -188,7 +191,7 @@ const calculator = {
 // ERROR 30
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
-const combined = [...arr1, ..arr2];
+const combined = [...arr1, ...arr2];
 
 // ERROR 31
 function calculateTotal(items) {
@@ -219,13 +222,13 @@ function processData(callback) {
     getData(function(data) {
         processStep1(data, function(result1) {
             processStep2(result1, function(result2) {
-                processStep3(result2, function(result3)
+                processStep3(result2, function(result3){
                     callback(result3);
                 });
             });
         });
     });
-}
+
 
 // ERROR 35
 class Person {
@@ -248,7 +251,7 @@ function getDayName(dayNum) {
         case 2:
             dayName = "Tuesday";
             break;
-        case 3
+        case 3 :
             dayName = "Wednesday";
             break;
         default:
@@ -283,7 +286,7 @@ function removeEvens(arr) {
 // ERROR 40
 function validateEmail(email) {
     const regex = /[a-z]+@[a-z]+\.[a-z]+/;
-    return regex.test(email;
+    return regex.test(email);
 }
 
 console.log("Script loaded successfully!");

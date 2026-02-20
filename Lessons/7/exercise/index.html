@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debug Challenge - Find All the Bugs!</title>
     <style>
@@ -67,15 +67,15 @@
     </style>
 </head>
 <body>
-    <div class="container"
+    <div class="container">;
         <h1>Welcome to the Bug Hunt!</h1>
         <p>This page is full of errors. Your mission: find and fix them all!</p>
     </div>
 
-    <diiv class="container">
+    <div class="container">
         <h2>User Registration</h2>
         
-        <form id="registrationForm>
+        <form id="registrationForm">
             <input type="text" id="username" placeholder="Enter username"></input>
             <br><br>
             
@@ -88,19 +88,18 @@
             
             <button type="button" onclick="RegisterUser()">Register</button>
         </form>
-    </diiv>
+    </div>
 
     <div  class ="container">
         <h2>Calculator</h2>
         <input type="number" id="num1" placeholder="First number">
         <input type="number" id="num2" placeholder="Second number">
-        <br><br>
-        
-        <button onclick="addNumbers()>Add Numbers</button>
+        <br>
+        <button onclick="addNumbers()">Add Numbers</button>
         <button onclick="multiplyNumbers()">Multiply</button>
         <button onclick="divideNumbers()">Divide</button>
         
-        <span>Result: <p id="calcResult">-</p></span>
+        <div>Result: <span id="calcResult">-</span></div>
     </div>
 
     <div class="container">
@@ -109,7 +108,7 @@
         <button onclick="clearUsers()">Clear</button>
         
         <ul id="userList">
-            <li>Click 'Load Users' to see the list
+            <li>Click 'Load Users' to see the list</li>
         </ul>
     </div>
 
@@ -124,7 +123,7 @@
     <div class="container">
         <h2>Message Board</h2>
         <textarea rows="4" cols="50" placeholder="Enter your message"></textarea>
-        <br>
+        <br></br>
         <button onclick="postMessage()">Post Message</button>
         <button onclick="clearMessages()">Clear All</button>
         
@@ -134,14 +133,14 @@
 
     <div class="container">
         <h2>Image Gallery</h2>
-        <img src="nonexistent-image.jpg" width="200">
+        <img src="nonexistent-image.jpg" width="200" alt="another good picture">
         <img scr="another-image.png" alt="Another image">
     </div>
 
     <div class="container">
         <h2>Useful Links</h2>
         <a hrf="https://developer.mozilla.org">MDN Web Docs</a>
-        <a href="https://javascript.info" target="_blank">JavaScript.info</a>
+        <a href="https://javascript.info">JavaScript.info</a>
     </div>
 
     <div class="container">
@@ -151,7 +150,7 @@
         </div>
     </div>
 
-    <script src="script"></script>
+    
 
     <div class="container">
         <h2>Score Table</h2>
@@ -172,6 +171,6 @@
             </tr>
         </table>
     </div>
-
+ <script src="script.js"></script>
 </body>
 </html>
