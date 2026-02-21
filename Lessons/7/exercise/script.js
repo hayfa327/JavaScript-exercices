@@ -43,14 +43,31 @@ function multiply (a, b)  {
     return a * b;
 };
 
+
+// ERROR 13 & 14 & 15
+function RegisterUser() {
+    const username = document.getElementByld("username").value;
+    const email = document.getElementById("email").value;
+    const age = document.getElementById("age").value;
+    
+    if (username = "") {
+        alert("Please enter a username");
+        return;
+    }
+    
+    console.log("User registered:", username, email, age);
+}
+
+
 // ERROR 10
 function addNumbers() {
     const num1 = document.getElementById("num1").value;
     const num2 = document.getElementById("num2").value;
-    const result = parseInt(num1) + parseInt(num2);
+    const result = Number(num1) + Number(num2);
     document.getElementById("calcResult").textContent = result;
-}
-console.log("clicked");
+    }
+   
+ 
 
 // ERROR 11
 function multiplyNumbers() {
@@ -67,21 +84,7 @@ function divideNumbers() {
     const result = num1 + num2;
     document.getElementById("calcResult").textContent = result;
 }
-
-// ERROR 13 & 14 & 15
-function registeruser() {
-    const username = document.getElementByld("username").value;
-    const email = document.getElementById("email").value;
-    const age = document.getElementById("age").value;
-    
-    if (username = "") {
-        alert("Please enter a username");
-        return;
-    }
-    
-    console.log("User registered:", username, email, age);
-}
-
+ 
 // ERROR 16
 function incrementCounter() {
     counter++;

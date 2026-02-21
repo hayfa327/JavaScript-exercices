@@ -77,14 +77,15 @@
         
         <form id="registrationForm">
             <input type="text" id="username" placeholder="Enter username"></input>
-            <br><br>
+            <br>
             
             <input typ="email" id="email" placeholder="Enter email">
-            <br><br>
+            <br>
             
             <label for="age">Your Age:
             <input type="number" id="age" placeholder="Enter age">
-            <br><br>
+            </label>
+            <br>
             
             <button type="button" onclick="RegisterUser()">Register</button>
         </form>
@@ -95,7 +96,7 @@
         <input type="number" id="num1" placeholder="First number">
         <input type="number" id="num2" placeholder="Second number">
         <br>
-        <button onclick="addNumbers()">Add Numbers</button>
+        <button id="btnAddNumber" onclick="addNumbers()">Add Numbers</button>
         <button onclick="multiplyNumbers()">Multiply</button>
         <button onclick="divideNumbers()">Divide</button>
         
@@ -171,6 +172,6 @@
             </tr>
         </table>
     </div>
- <script src="script.js"></script>
+ <script src="script.js" defer></script>
 </body>
 </html>
