@@ -2,6 +2,9 @@
 // DEBUG CHALLENGE - Find and Fix All the JavaScript Errors!
 // ============================================================
 
+// NOTE that some errors may be syntax errors, while others may be logical errors. You might need to check the index.html file for some of the errors related to DOM manipulation.
+// Your task is to identify and correct each error to ensure the code runs smoothly. Good luck!
+
 // ERROR 1
 let counter = 0;
 
@@ -105,7 +108,7 @@ function resetCounter() {
     document.getElementById("counter-display").textContent = counter;
 }
 
-// ERROR 19
+// ERROR 19 -- There is no error in this one, its a setup for 20-21
 const users = [
     { name: "Alice", age: 30 },
     { name: "Bob", age: 25 },
