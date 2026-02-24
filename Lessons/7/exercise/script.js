@@ -6,7 +6,7 @@
 // Your task is to identify and correct each error to ensure the code runs smoothly. Good luck!
 
 // ERROR 1
-let counter = 0;
+ let counter = 0;
 
 // ERROR 2
 const welcomeMessage = "Welcome to the Debug Challenge!";
@@ -39,13 +39,11 @@ function greetUser(name) {
         console.log("Welcome, Admin!");
     }
 }
-    
 
 // ERROR 9
 function multiply (a, b)  {
     return a * b;
 };
-
 
 // ERROR 13 & 14 & 15
 function RegisterUser() {
@@ -53,14 +51,13 @@ function RegisterUser() {
     const email = document.getElementById("email").value;
     const age = document.getElementById("age").value;
     
-    if (username = "") {
+    if (username === "") {
         alert("Please enter a username");
         return;
     }
     
     console.log("User registered:", username, email, age);
 }
-
 
 // ERROR 10
 function addNumbers() {
@@ -69,8 +66,6 @@ function addNumbers() {
     const result = Number(num1) + Number(num2);
     document.getElementById("calcResult").textContent = result;
     }
-   
- 
 
 // ERROR 11
 function multiplyNumbers() {
@@ -224,17 +219,17 @@ function parseUserData() {
 }
 
 // ERROR 34
-function processData(callback) {
-    getData(function(data) {
-        processStep1(data, function(result1) {
-            processStep2(result1, function(result2) {
-                processStep3(result2, function(result3){
+function processData(callback){
+    processData(function(data) {
+        processData(data, function(result1) {
+            processData(result1, function(result2) {
+                processData(result2, function(result3) {
                     callback(result3);
                 });
             });
         });
     });
-
+}
 
 // ERROR 35
 class Person {
@@ -254,6 +249,7 @@ function getDayName(dayNum) {
     switch(dayNum) {
         case 1:
             dayName = "Monday";
+            break;
         case 2:
             dayName = "Tuesday";
             break;
@@ -291,8 +287,9 @@ function removeEvens(arr) {
 
 // ERROR 40
 function validateEmail(email) {
-    const regex = /[a-z]+@[a-z]+\.[a-z]+/;
+    const regex = /^[a-z]+@[a-z]+\.[a-z]+$/;
     return regex.test(email);
 }
 
 console.log("Script loaded successfully!");
+ 
